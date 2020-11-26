@@ -1,8 +1,9 @@
 #include "binary_trees.h"
 #include "10-binary_tree_depth.c"
 /**
- * binary_tree_depth - measures the depth of a node in a binary tree
- * @tree: Binary tree
+ * binary_tree_ancestor - measures the depth of a node in a binary tree
+ * @first: pointer first node
+ * @second: Pointer to a second node
  * Description: measures the depth of a node in a binary tree
  * Return: Nothing
  */
@@ -18,7 +19,7 @@ binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 	s_depth = binary_tree_depth(second);
 
 	while (f_depth > s_depth)
-		first = first->parent,f_depth -= 1;
+		first = first->parent, f_depth -= 1;
 	while (f_depth < s_depth)
 		second = second->parent, s_depth -= 1;
 
