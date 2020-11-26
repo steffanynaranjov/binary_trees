@@ -2,7 +2,7 @@
 #include "17-binary_tree_sibling.c"
 /**
  * binary_tree_uncle - measures the height of a binary tree
- * @tree: Binary tree
+ * @node: the node
  * Description: measures the height of a binary tree
  * Return: Nothing
  */
